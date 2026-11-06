@@ -1,0 +1,126 @@
+*{
+    margin: 0; padding: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #D3D3D3;
+}
+
+nav a:link{
+    color: black;
+}
+
+nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    color: dodgerblue;
+}
+
+nav a{
+    display: block;      /* it's like ice block */
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;         /* 1em = 16px */
+}
+
+nav ul.main-menu{
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45px;
+    right: 180px;
+    font-size: 30px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav ul.logo{
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#cp{
+    padding: 5px;
+    padding-left: 80px;
+}
+
+#fb{
+    margin-left: 300px;
+}
+
+#twt{
+    margin-left: 15px;
+
+}
+
+#ig{
+    margin-left: 15px;
+
+}
+
+body{
+    background-color: #D3D3D3;
+}
+
+#first{
+    display: flex; 
+    justify-content: center; 
+    padding: 5px;
+}
+
+#second{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+#third{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    justify-content: center; 
+    padding: 20px;
+}
+
+#facebook{
+    padding: 10px;
+    margin-right: 50px;
+}
+
+#twitter{
+    padding: 10px;
+    margin-left: 50px;
+}
+
+#pandf{
+    padding: 10px;
+    margin-right: 200px;
+}
+
+#email{
+    padding: 10px;
+    margin-left: 200px;
+}
+

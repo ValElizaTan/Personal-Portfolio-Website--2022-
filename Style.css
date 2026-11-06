@@ -1,0 +1,140 @@
+*{
+    margin: 0; padding: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #D3D3D3;
+}
+
+nav a:link{
+    color: black;
+}
+
+nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    color: dodgerblue;
+}
+
+nav a{
+    display: block;      /* it's like ice block */
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;         /* 1em = 16px */
+}
+
+nav ul.main-menu{
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45px;
+    right: 180px;
+    font-size: 30px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav ul.logo{
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header{
+    margin-top: 10px;
+    background-image: url("images/bgimage.jpg");
+    background-repeat: no-repeat;
+    height: 25em;
+    background-size: cover;
+
+}
+
+header h1{
+    border-bottom: 5px solid black;
+    margin-right: 60px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding-right: 150px;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+    font-style: italic;
+    font-weight: lighter;
+    text-align: right;
+}
+
+header h3{
+    padding-left: 150px;
+    margin-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+}
+
+header h5{
+    margin-top: 50px;
+    margin-left: 1020px;
+    text-align: center;
+    border: 5px solid black;
+    width: 85px;
+    height: 20px;
+    background-color: black;
+    color: white;
+}
+
+header h5 a:link{
+    color: white;
+    text-decoration: none;
+}
+
+header h5 a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+header h5 a:hover{
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+footer{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer #cp{
+    padding: 5px;
+    padding-left: 80px;
+}
+
+footer #fb{
+    margin-left: 300px;
+}
+
+footer #twt{
+    margin-left: 15px;
+}
+
+footer #ig{
+    margin-left: 15px;
+}
+
+body{
+    background-color: #D3D3D3;
+}

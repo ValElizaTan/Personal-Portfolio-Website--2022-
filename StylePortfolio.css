@@ -1,0 +1,228 @@
+*{
+    margin: 0; padding: 0;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    background-color: #D3D3D3;
+}
+
+nav a:link{
+    color: black;
+}
+
+nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    color: dodgerblue;
+}
+
+nav a{
+    display: block;      /* it's like ice block */
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;         /* 1em = 16px */
+}
+
+nav ul.main-menu{
+    display: flex;
+    justify-content: space-around;
+    justify-content: flex-end;
+    position: absolute;
+    top: 45px;
+    right: 180px;
+    font-size: 30px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav ul.logo{
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section h1{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-row-gap: 20px;
+    grid-column-gap:20px;
+    padding:20px;
+}
+
+.griditems{
+    text-align: center;
+    
+}
+
+.griditems img{
+    width:100%;
+}
+
+.w1{
+    grid-column:1/1;
+    grid-row: 1/1;
+}
+
+.w2{
+    grid-column:2/3;
+    grid-row: 1/2;
+}
+
+.w3{
+    grid-column:3/4;
+    grid-row: 1/2;
+}
+
+.grid-container h4{
+    padding: 30px;
+    font-weight: lighter;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+footer #cp{
+    padding: 5px;
+    padding-left: 80px;
+}
+
+footer #fb{
+    margin-left: 300px;
+}
+
+footer #twt{
+    margin-left: 15px;
+
+}
+
+footer #ig{
+    margin-left: 15px;
+
+}
+
+body{
+    background-color: #D3D3D3;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+video{vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -5px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Caption text */
+.text {
+    background-color: aliceblue;
+    color: black;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 2px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}

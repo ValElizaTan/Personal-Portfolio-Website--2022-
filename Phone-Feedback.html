@@ -1,0 +1,135 @@
+<!--Name : Valerie -->
+<!--Admin No : 211354T-->
+<!--Project : Phone & Feedback.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Valerie Tan - Phone & Feedback</title>  
+        <style>
+            h1{
+                font-family: cursive;
+                text-align: center;
+                text-decoration: underline;
+            }
+            label{
+                font-weight: bold;
+            }
+            div{
+                margin: 20px;  
+            }
+            legend{
+                padding: 5px;
+                font-weight: bold;
+            }
+
+            main{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap; /*(implying all to be on 1 line)*/
+            }
+
+            main.fs1{
+                flex: 1;
+                font-size: larger;
+                /* justify-content: left; */
+            }
+
+            main.fs2{
+                flex: 1;
+                font-size: larger;
+                /* justify-content: right; */
+            }
+
+            div.enter{
+                display: flex;
+                justify-content: center;    
+                margin: 0; padding: 10px;
+            }
+
+            body{
+                background-color: #D3D3D3;
+            }
+
+            input[type='image'] 
+            {
+                position: relative;
+                top: 10px;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <h1>
+           Feedback Information
+        </h1>
+        <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <main class="fs1">
+            <fieldset>
+                <legend>
+                    Phone Number
+                </legend>
+                
+                <label>
+                    Contact Me at:
+                    +65 83160942
+                </label>
+
+                <div>
+                    <img  src="images/Callme.png" id="image" alt="Call Me">
+                </div>
+            </fieldset>
+
+            <fieldset class="fs2">
+                <legend>
+                    Feedback Form
+                </legend>
+    
+                <div>
+                    <label>Name: </label>
+                    <input name="name" type="text" title="Must be between 5-50 characters long, Must not contain number" placeholder="Type your name here"/>
+                </div>
+    
+                <div>
+                    <label>Rating:</label>
+                    <input type="radio" name="rating" value="1" required/>1 &nbsp;&nbsp;
+                    <input type="radio" name="rating" value="2" required/>2 &nbsp;&nbsp;
+                    <input type="radio" name="rating" value="3" required/>3 &nbsp;&nbsp;
+                    <input type="radio" name="rating" value="4" required/>4 &nbsp;&nbsp;
+                    <input type="radio" name="rating" value="5" required/>5 &nbsp;&nbsp;
+                </div>
+    
+                <div>
+                    <label>Mobile Number: </label>
+                    <input name="phone no" type="text" pattern="[0-9]{8}" size="24" title="8 digits, no alphabets" placeholder="Type your mobile number here"/>
+                </div>
+                
+                <div>
+                    <label>Personal email Address: </label>
+                    <input name="email" type="email" placeholder="Type your email here"/>
+                </div>
+    
+                <div>
+                    <label>Feedback:</label><br />
+                    <textarea name="feedback" rows="5" cols="30"  placeholder="Give your feedback here" required></textarea>
+                </div>
+            </fieldset>
+        </main>
+        <br>
+        <div class="enter">
+            <input type="submit" value="Submit" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--Value is the text shown to user-->
+            <input type="reset" value="Reset" />
+        </div>
+
+        <!-- pattern=""  (element's value is checked against on form submission)
+            [a-zA-z] means any type of letter, be it uppercase or lowercase
+            {3} means a definite amount of letters u can have inside ur input
+            {1,3} means 1 to 3 letters
+        -->
+
+        </form>
+    </body>
+</html>
