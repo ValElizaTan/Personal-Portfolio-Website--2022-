@@ -2,6 +2,12 @@
 
 My first personal portfolio website, built with plain HTML and CSS (plus a little JavaScript for the gallery) for the Web Development module (EGL144) at Nanyang Polytechnic. The pages follow designs I made in Adobe Illustrator for the companion design module (EGL162).
 
+## Demo
+
+https://github.com/user-attachments/assets/5350d7d4-3cb0-4baf-ba19-0a9c357cf6c1
+
+*A walkthrough of the Home, About Me, Portfolio and Contact pages. (0:53)*
+
 ## Pages
 
 | Page | Content |
@@ -30,3 +36,4 @@ No build step is needed. Open `index.html` in a browser.
 ## Author
 
 Valerie Tan Wan Xin – Nanyang Polytechnic, Infocomm & Media Engineering
+
